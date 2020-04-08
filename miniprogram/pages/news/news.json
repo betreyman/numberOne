@@ -1,0 +1,9 @@
+{
+    "navigationBarBackgroundColor": "#66CDAA",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "云课堂",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false,
+    "usingComponents": {}
+}

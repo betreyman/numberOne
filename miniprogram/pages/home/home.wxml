@@ -1,0 +1,5 @@
+<view class="home-container">
+	<image class="home-image" src="../../images/self/banner.jpg"></image>
+	<text class="userInfo">Hello,betreyman</text>
+	<view class="btn" bindtap="goNewsTag"><text>我们一起听音乐</text></view>
+</view>

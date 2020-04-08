@@ -1,0 +1,14 @@
+<!--pages/news/news.wxml-->
+<view class="news-container">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}">
+    <swiper-item>
+      <image src="../../images/self/1.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/self/2.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/self/3.jpg"></image>
+    </swiper-item>
+  </swiper>
+</view>
