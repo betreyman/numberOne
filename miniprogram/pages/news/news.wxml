@@ -1,30 +1,22 @@
 <!--pages/news/news.wxml-->
+<import src="../template/news-template.wxml" />
+
 <view class="news-container">
-  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}">
-    <swiper-item>
-      <image src="../../images/self/1.jpg"></image>
-    </swiper-item>
-    <swiper-item>
-      <image src="../../images/self/2.jpg"></image>
-    </swiper-item>
-    <swiper-item>
-      <image src="../../images/self/3.jpg"></image>
-    </swiper-item>
-  </swiper>
-  <view class="article-list">
-    <view class="author">
-      <image src="{{initData[0].authorIcon}}"></image>
-      <text class="author-name">{{initData[0].authorName}}</text>
-      <text class="author-date">{{initData[0].authorDate}}</text>
-    </view>
-    <text class="title-name">{{initData[0].title}}</text>
-    <image class="title-img" src="{{initData[0].articleImg}}"></image>
-    <text class="title-text">{{initData[0].articleText}}</text>
-    <view class="bottom">
-      <image class="bottom-img" src="../../images/self/shoucang.png"></image>
-      <text class="bottom-text">{{initData[0].articleStar}}</text>
-      <image class="bottom-img" src="../../images/self/pinglun.png"></image>
-      <text class="bottom-text">{{initData[0].acticleSave}}</text>
-    </view>
-  </view>
+	<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}">
+		<swiper-item>
+			<image src="../../images/self/1.jpg"></image>
+		</swiper-item>
+		<swiper-item>
+			<image src="../../images/self/2.jpg"></image>
+		</swiper-item>
+		<swiper-item>
+			<image src="../../images/self/3.jpg"></image>
+		</swiper-item>
+	</swiper>
+	<block wx:for="{{initData}}" wx:for-index="index" wx:for-item="item" wx:key="newsId">
+		<!-- block 与 template 不支持事件 -->
+    <view bindtap="goNewsDetail" data-news-id="{{item.newsId}}">
+			<template is="newsTemplate" data="{{...item}}"></template>
+		</view>
+	</block>
 </view>

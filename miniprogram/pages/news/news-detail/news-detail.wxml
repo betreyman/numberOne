@@ -1,0 +1,18 @@
+<view class="newsDetail-container">
+	<image class="detail-banner" src="../{{articleImg}}"></image>
+	<view class="author">
+		<image class="author-icon" src="../{{authorIcon}}"></image>
+		<text class="author-name">{{authorName}}</text>
+		<text class="author-date">发表于 {{authorDate}}</text>
+		<image class="author-icon" src="../../../images/self/shoucang.png"></image>
+		<view class="detail-artical">
+			<text class="detail-title">{{title}}</text>
+		</view>
+		<view class="icon-container">
+			<image class="detail-icon" src="../../../images/self/shoucang.png"></image>
+			<image class="detail-icon" src="../../../images/self/pinglun.png"></image>
+			<view class="horizon"></view>
+		</view>
+		<text class="detail-text">{{articleText}}}</text>
+	</view>
+</view>

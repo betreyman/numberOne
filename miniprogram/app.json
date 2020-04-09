@@ -2,7 +2,7 @@
   "pages": [
     "pages/news/news",
     "pages/home/home",
-
+    "pages/news/news-detail/news-detail",
     "pages/index/index",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
